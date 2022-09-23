@@ -50,8 +50,8 @@
   <view class='user_column'>
 
     <view class='user_column_item' bindtap='goCoupon'>
-      <image class='user_column_item_image' src='/static/images/coupon.png'></image>
-      <view class='user_column_item_text'>优惠卷</view>
+      <image class='user_column_item_image' src='/static/images/about.png'></image>
+      <view class='user_column_item_text'>关于我们</view>
     </view>
     <view class='user_column_item' bindtap='goCollect'>
       <image class='user_column_item_image' src='/static/images/collect.png'></image>
@@ -61,10 +61,10 @@
       <image class='user_column_item_image' src='/static/images/footprint.png'></image>
       <view class='user_column_item_text'>浏览足迹</view>
     </view>
-    <view class='user_column_item' bindtap='goGroupon'>
+    <!-- <view class='user_column_item' bindtap='goGroupon'>
       <image class='user_column_item_image' src='/static/images/group.png'></image>
       <view class='user_column_item_text'>我的拼团</view>
-    </view>
+    </view> -->
 
     <view class='user_column_item' bindtap='goAddress'>
       <image class='user_column_item_image' src='/static/images/address.png'></image>
@@ -73,7 +73,7 @@
   </view>
   <view class='separate'></view>
 
-  <view class='user_row'>
+  <!-- <view class='user_row'>
     <view class='user_row_left'>必备工具</view>
   </view>
   <view class='user_column'>
@@ -101,7 +101,7 @@
       <view class='user_column_item_text'>关于我们</view>
     </view>
   </view>
-  <view class='separate'></view>
+  <view class='separate'></view> -->
 
   <view class="logout" wx:if="{{hasLogin}}" bindtap="exitLogin">退出登录</view>
 </view>

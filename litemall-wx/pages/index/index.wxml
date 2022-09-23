@@ -6,7 +6,7 @@
             <text class="txt">商品搜索, 共{{goodsCount}}款好物</text>
         </navigator>
     </view>
-    <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+    <!-- <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
         <swiper-item wx:for="{{banner}}" wx:key="id">
             <block wx:if="{{item.link>0}}">
                 <navigator url="/pages/goods/goods?id={{item.link}}">
@@ -17,14 +17,14 @@
                 <image src="{{item.url}}" background-size="cover"></image>
             </block>
         </swiper-item>
-    </swiper>
+    </swiper> -->
     <view class="m-menu">
         <navigator class="item" url="/pages/category/category?id={{item.id}}" wx:for="{{channel}}" wx:key="id">
             <image src="{{item.iconUrl}}" background-size="cover"></image>
             <text>{{item.name}}</text>
         </navigator>
     </view>
-    <view class="a-section a-coupon" wx:if="{{coupon.length > 0}}">
+    <!-- <view class="a-section a-coupon" wx:if="{{coupon.length > 0}}">
         <view class="h">
             <view class="title">
                 <view>
@@ -38,7 +38,6 @@
             <view class="coupon_item" wx:for="{{coupon}}" wx:for-index="index" wx:for-item="item" wx:key="id" bindtap="getCoupon" data-index="{{item.id}}">
                 <view class="coupon_price">
                     <view>
-                        <!-- <view class="tag"></view> -->
                         <view class="price">{{item.discount}}元</view>
                         <view class="p">满{{item.min}}元使用</view>
                     </view>
@@ -56,8 +55,8 @@
                 </view>
             </view>
         </view>
-    </view>
-    <view class="a-section a-groupon" wx:if="{{groupons.length > 0}}">
+    </view> -->
+    <!-- <view class="a-section a-groupon" wx:if="{{groupons.length > 0}}">
         <view class="h">
             <view class="title">
                 <view>
@@ -90,8 +89,8 @@
                 </navigator>
             </view>
         </view>
-    </view>
-    <view class="a-section a-brand">
+    </view> -->
+    <!-- <view class="a-section a-brand">
         <view class="h">
             <navigator url="../brand/brand">
                 <text class="txt">品牌制造商直供</text>
@@ -111,8 +110,8 @@
                 </navigator>
             </view>
         </view>
-    </view>
-    <view class="a-section a-new" wx:if="{{newGoods.length > 0}}">
+    </view> -->
+    <!-- <view class="a-section a-new" wx:if="{{newGoods.length > 0}}">
         <view class="h">
             <view>
                 <navigator url="../newGoods/newGoods">
@@ -129,7 +128,7 @@
                 </navigator>
             </view>
         </view>
-    </view>
+    </view> -->
     <view class="a-section a-popular" wx:if="{{hotGoods.length > 0}}">
         <view class="h">
             <view>
@@ -153,7 +152,7 @@
             </view>
         </view>
     </view>
-    <view class="a-section a-topic" wx:if="topics.length > 0" hidden="{{topics.length <= 0}}">
+    <!-- <view class="a-section a-topic" wx:if="topics.length > 0" hidden="{{topics.length <= 0}}">
         <view class="h">
             <view>
                 <navigator url="/pages/topic/topic">
@@ -175,8 +174,8 @@
                 </view>
             </scroll-view>
         </view>
-    </view>
-    <view class="good-grid" wx:for="{{floorGoods}}" wx:key="id">
+    </view> -->
+    <!-- <view class="good-grid" wx:for="{{floorGoods}}" wx:key="id">
         <view class="h" wx:if="{{item.goodsList.length>0}}">
             <text>{{item.name}}</text>
         </view>
@@ -194,5 +193,5 @@
         <navigator url="/pages/category/category?id={{item.id}}" class="t" wx:if="{{item.goodsList.length>0}}">
             <view class="txt">{{'更多'+item.name+'好物 >'}}</view>
         </navigator>
-    </view>
+    </view> -->
 </view>
