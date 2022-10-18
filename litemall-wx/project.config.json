@@ -41,10 +41,18 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.4.0",
-  "appid": "wx009bbca7af21de3d",
+  "appid": "wx09e42e60123bae25",
   "projectname": "litemall-wx",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  },
   "condition": {
     "search": {
       "list": []
@@ -328,13 +336,5 @@
         }
       ]
     }
-  },
-  "packOptions": {
-    "ignore": [],
-    "include": []
-  },
-  "editorSetting": {
-    "tabIndent": "insertSpaces",
-    "tabSize": 2
   }
 }

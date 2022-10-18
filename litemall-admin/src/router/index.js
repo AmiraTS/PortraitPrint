@@ -284,6 +284,39 @@ export const asyncRoutes = [
     ]
   },
   {
+    path: '/picture',
+    component: Layout,
+    redirect: 'noredirect',
+    alwaysShow: true,
+    name: 'pictureManage',
+    meta: {
+      title: '图片管理',
+      icon: 'chart'
+    },
+    children: [
+      {
+        path: 'original',
+        component: () => import('@/views/picture/original'),
+        name: 'pictureOriginal',
+        meta: {
+          // perms: ['GET /admin/goods/list', 'POST /admin/goods/delete'],
+          title: '原图',
+          noCache: true
+        }
+      },
+      {
+        path: 'design',
+        component: () => import('@/views/picture/design'),
+        name: 'pictureDesign',
+        meta: {
+          // perms: ['GET /admin/goods/list', 'POST /admin/goods/delete'],
+          title: '设计稿',
+          noCache: true
+        }
+      }
+    ]
+  },
+  {
     path: '/promotion',
     component: Layout,
     redirect: 'noredirect',
