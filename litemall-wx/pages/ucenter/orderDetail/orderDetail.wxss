@@ -74,6 +74,30 @@ page {
   padding-right: 31.25rpx;
 }
 
+.order-goods .diy {
+  height: 93.75rpx;
+  line-height: 93.75rpx;
+  margin-left: 31.25rpx;
+  border-bottom: 1px solid #f4f4f4;
+  padding-right: 31.25rpx;
+}
+
+.order-goods .diy .label{
+  display: block;
+  float: left;
+  height: 33rpx;
+  line-height: 93.75rpx;
+  color: #333;
+  font-size: 30rpx;
+}
+
+.order-goods .diy.img {
+  height: 145.83rpx;
+  width: 145.83rpx;
+  margin: 0 auto;
+  background: #f4f4f4;
+}
+
 .order-goods .h .label {
   float: left;
   font-size: 30rpx;

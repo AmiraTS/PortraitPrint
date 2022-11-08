@@ -51,6 +51,13 @@
       </view>
     </view>
 
+    <view class="diy">
+      <view class="label">diy设计</view>
+      <view class="img">
+        <image src=""></image>
+      </view>
+    </view>
+
     <view class="order-bottom">
       <view class="address">
         <view class="t">

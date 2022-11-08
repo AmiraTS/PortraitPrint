@@ -563,3 +563,12 @@
     padding-right: .5rem;
     width: 100%;
 }
+
+.add_icon{
+ /* 首页上传图片 */
+  position: fixed;
+  width:120px;
+  height:48px;
+  bottom: -2px;
+  right: 95px;
+}

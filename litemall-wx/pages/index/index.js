@@ -138,4 +138,30 @@ Page({
       }
     })
   },
+ 
+  uploadPictures: function () {
+    const that = this
+    wx.showActionSheet({
+      itemList: ['拍照', '相册'],
+      itemColor: '',
+      //成功时回调
+      success: function (res) {
+        if (!res.cancel) {
+          /*
+           res.tapIndex返回用户点击的按钮序号，从上到下的顺序，从0开始
+           比如用户点击本例中的拍照就返回0，相册就返回1
+           我们res.tapIndex的值传给chooseImage()
+          */
+          that.chooseImage(res.tapIndex)
+        }
+      },
+      //失败时回调
+      fail: function (res) {
+        console.log('调用失败')
+       },
+      complete: function (res) { },
+    })
+  },
+
+  
 })

@@ -95,6 +95,45 @@ Page({
       });
     };
   },
+  godesignOrder(){
+    if (this.data.hasLogin) {
+      try {
+        wx.setStorageSync('tab', 0);
+      } catch (e) {
+
+      }
+      wx.navigateTo({
+        url: "/pages/ucenter/designOrder/designOrder"
+      });
+    } else {
+      wx.navigateTo({
+        url: "/pages/auth/login/login"
+      });
+    }
+  },
+
+  godesignOrderIndex(e){
+    if (this.data.hasLogin) {
+      let tab = e.currentTarget.dataset.index
+      let route = e.currentTarget.dataset.route
+      try {
+        wx.setStorageSync('tab', tab);
+      } catch (e) {
+
+      }
+      wx.navigateTo({
+        url: route,
+        success: function(res) {},
+        fail: function(res) {},
+        complete: function(res) {},
+      })
+    } else {
+      wx.navigateTo({
+        url: "/pages/auth/login/login"
+      });
+    };
+  },
+
   goCoupon() {
     if (this.data.hasLogin) {
       wx.navigateTo({

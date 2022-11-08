@@ -152,6 +152,11 @@
             </view>
         </view>
     </view>
+ 
+    <view bindtap='uploadPictures'>
+      <image class="add_icon" src="../../static/images/uploadPictures.png"></image>
+    </view>
+ 
     <!-- <view class="a-section a-topic" wx:if="topics.length > 0" hidden="{{topics.length <= 0}}">
         <view class="h">
             <view>
