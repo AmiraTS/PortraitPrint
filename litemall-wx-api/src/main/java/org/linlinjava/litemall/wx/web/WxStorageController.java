@@ -7,6 +7,7 @@ import org.linlinjava.litemall.core.util.CharUtil;
 import org.linlinjava.litemall.core.util.ResponseUtil;
 import org.linlinjava.litemall.db.domain.LitemallStorage;
 import org.linlinjava.litemall.db.service.LitemallStorageService;
+import org.linlinjava.litemall.db.service.LitemallUserPicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -32,6 +33,8 @@ public class WxStorageController {
     @Autowired
     private StorageService storageService;
     @Autowired
+    private LitemallUserPicService litemallUserPicService;
+    @Autowired
     private LitemallStorageService litemallStorageService;
 
     private String generateKey(String originalFilename) {
@@ -51,9 +54,10 @@ public class WxStorageController {
     }
 
     @PostMapping("/upload")
-    public Object upload(@RequestParam("file") MultipartFile file) throws IOException {
+    public Object upload(@RequestParam("file") MultipartFile file,@RequestParam("id") Integer userId) throws IOException {
         String originalFilename = file.getOriginalFilename();
         LitemallStorage litemallStorage = storageService.store(file.getInputStream(), file.getSize(), file.getContentType(), originalFilename);
+        litemallUserPicService.store(litemallStorage,userId);
         return ResponseUtil.ok(litemallStorage);
     }
 
