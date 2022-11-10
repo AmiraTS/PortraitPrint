@@ -248,7 +248,7 @@
     insert into litemall_user_pic (user_id, key,pic_url,
       `type`, add_time, update_time,
       deleted)
-    values (#{userId,jdbcType=INTEGER},#{key,javaType=VARCHAR}, #{picUrl,jdbcType=VARCHAR,typeHandler=org.linlinjava.litemall.db.mybatis.JsonStringArrayTypeHandler},
+    values (#{userId,jdbcType=INTEGER},#{key,jdbcType=VARCHAR}, #{picUrl,jdbcType=VARCHAR,typeHandler=org.linlinjava.litemall.db.mybatis.JsonStringArrayTypeHandler},
       #{type,jdbcType=INTEGER}, #{addTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP},
       #{deleted,jdbcType=BIT})
   </insert>
