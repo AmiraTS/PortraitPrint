@@ -299,7 +299,7 @@ export const asyncRoutes = [
         component: () => import('@/views/picture/original'),
         name: 'pictureOriginal',
         meta: {
-          // perms: ['GET /admin/goods/list', 'POST /admin/goods/delete'],
+          perms: ['GET /admin/original/list', 'POST /admin/original/create', 'POST /admin/original/delete', 'POST /admin/original/update'],
           title: '原图',
           noCache: true
         }
@@ -316,6 +316,31 @@ export const asyncRoutes = [
       }
     ]
   },
+
+  {
+    path: '/design',
+    component: Layout,
+    redirect: 'noredirect',
+    alwaysShow: true,
+    name: 'disignManage',
+    meta: {
+      title: '设计管理',
+      icon: 'chart'
+    },
+    children: [
+      {
+        path: 'list',
+        component: () => import('@/views/design/list'),
+        name: 'designList',
+        meta: {
+          //  perms: ['GET /admin/design/list', 'POST /admin/design/delete'],
+          title: '订单列表',
+          noCache: true
+        }
+      }
+    ]
+  },
+
   {
     path: '/promotion',
     component: Layout,
