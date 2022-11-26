@@ -1,6 +1,6 @@
 /* eslint-disable */
-import { saveAs } from 'file-saver'
-import XLSX from 'xlsx'
+import { saveAs } from '@/utils/FileSaver.min.js'
+import * as XLSX from 'xlsx'
 
 function generateArray(table) {
   var out = [];
