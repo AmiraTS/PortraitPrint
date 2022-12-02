@@ -570,5 +570,34 @@
   width:120px;
   height:48px;
   bottom: -2px;
-  right: 95px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.bigTitle{
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px 1px rgb(128, 128, 128);
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.bigTitleImage{
+  width: 180px;
+  height: 60px;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+page {
+  background: -webkit-linear-gradient(top,rgb(102, 204, 173),white);
 }

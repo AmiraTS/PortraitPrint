@@ -1,0 +1,27 @@
+<view class="container">
+
+  <view class="title-container">
+    <view>效果图</view>
+  </view>
+
+  <view class="p-container">
+
+    <view class="p-border">
+      <image class="p" mode='widthFix' src="/static/images/style1.png"></image>
+    </view>
+    <view class="text">
+      恭喜！风格化图片生成成功
+      点击“保存”可付费下载无水印设计图
+      点击“下单商品“可购买图片diy商品
+    </view>
+  </view>
+
+  <view bindtap="toSave">
+    <image class="save" src="/static/images/save.png"></image>
+  </view>
+  <view bindtap="toOrder">
+    <image class="order" src="/static/images/order.png"></image>
+  </view>
+
+
+</view>

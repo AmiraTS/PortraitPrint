@@ -1,0 +1,14 @@
+<scroll-view>
+  <view class="container">
+
+    <view class="title1-container">
+      <view class="title1">马克杯</view>
+    </view>
+    <view class="p1-container">
+      <view class="p1-border">
+        <image class="p1" mode="widthFix" style="width: 100%;" src="/static/images//coin.png"></image>
+      </view>
+    </view>
+
+  </view>
+</scroll-view>

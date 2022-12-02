@@ -1,0 +1,76 @@
+/* pages/designResult/designResult.wxss */
+page {
+  background: -webkit-linear-gradient(top,rgb(102, 204, 173),white);
+}
+
+.container{
+  position: fixed;
+  top: 5.95vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-container{
+  background-color:rgb(96, 187, 160);
+  width: 87.5vw;
+  height: 5.95vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.p-container{
+  background-color: rgb(255, 255, 255);
+  position:absolute;
+  top: 5.95vh;
+  width:  87.5vw;
+  height: 75vh;
+}
+
+.p-border{
+  position: absolute;
+  top: 5.95vh;
+  width: 60vw;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.p{
+  width: 100%;
+}
+
+.text{
+  width: 75vw;
+  position: absolute;
+  bottom: 12vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  white-space:pre-wrap
+}
+
+.save{
+  width: 120px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top:75vh;
+}
+
+.order{
+  width: 120px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  top:75vh;
+}
+

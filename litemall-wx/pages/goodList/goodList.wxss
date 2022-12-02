@@ -1,0 +1,46 @@
+
+page {
+  background: -webkit-linear-gradient(top,rgb(102, 204, 173),white);
+}
+
+.container{
+  position: fixed;
+  top: 5.95vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title1-container{
+  background-color:rgb(96, 187, 160);
+  width: 87.5vw;
+  height: 5.95vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.p1-container{
+  background-color: rgb(255, 255, 255);
+  position:absolute;
+  top: 5.95vh;
+  width:  87.5vw;
+  height: 33.8vh;
+}
+
+.p1-border{
+  position: absolute;
+  top: 3vh;
+  width: 40vw;
+  height: 35vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}

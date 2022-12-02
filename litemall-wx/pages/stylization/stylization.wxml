@@ -1,0 +1,37 @@
+<!--pages/stylization/stylization.wxml-->
+<view class="container">
+
+<view class="uploadPicture">
+
+  <view class="p-title-container">
+    <view class="p-title">原图</view>
+  </view>
+  <view class="p-container">
+    <view class="p-border">
+      <image class="p" mode="widthFix" style="width: 100%;" src="{{upload_pic}}"></image>
+    </view>
+  </view>
+  <view class="e-title-container">
+    <view class="e-title">期望风格</view>
+  </view>
+
+  <view class="e-choose-container">
+    <view class="e-choose">
+      <swiper  style="display: flex;flex-direction: column;justify-content: center;align-items: center;overflow:unset;width:100%;height:360rpx;margin-top:50rpx;" bindchange="changeSwiper1" previous-margin="150rpx" next-margin="150rpx">
+        <block wx:for="{{imgList1}}" wx:key>
+          <swiper-item class=" {{currentIndex1 == index ? 'swiperItemActive1': 'swiperItem1'}}">
+            <image mode="aspectFill" src='{{item.img}}' class="imageItem1 {{currentIndex1 == index ? 'active1': ''}}"> </image>
+            <view class="style-title">{{item.style}}</view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view  bindtap="design">
+      <image class="todesign" src="../../static/images/design.png"></image>
+    </view>
+  </view>
+
+</view>
+
+
+</view>
