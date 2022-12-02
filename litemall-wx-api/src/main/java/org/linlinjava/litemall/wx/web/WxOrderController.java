@@ -89,7 +89,8 @@ public class WxOrderController {
      */
     @PostMapping("prepay")
     public Object prepay(@LoginUser Integer userId, @RequestBody String body, HttpServletRequest request) {
-        return wxOrderService.prepay(userId, body, request);
+//        return wxOrderService.prepay(userId, body, request);
+        return wxOrderService.unRealPrepay(userId,body,request);
     }
 
     /**
@@ -116,7 +117,8 @@ public class WxOrderController {
      */
     @PostMapping("pay-notify")
     public Object payNotify(HttpServletRequest request, HttpServletResponse response) {
-        return wxOrderService.payNotify(request, response);
+//        return wxOrderService.payNotify(request, response);
+        return wxOrderService.unRealPayNotify(request,response);
     }
 
     /**
