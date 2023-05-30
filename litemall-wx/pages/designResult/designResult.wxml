@@ -7,7 +7,7 @@
   <view class="p-container">
 
     <view class="p-border">
-      <image class="p" mode='widthFix' src="/static/images/style1.png"></image>
+      <image class="p" mode='widthFix' src="{{upload_pic}}"></image>
     </view>
     <view class="text">
       恭喜！风格化图片生成成功

@@ -139,11 +139,11 @@ Page({
     })
   },
  
-  uploadPictures:function(){
+  uploadPictures:function(){ 
     wx.showActionSheet({
       itemList: ['拍照','从相册中选择'],
       success(res) {
-        console.log(res.tapIndex)
+        // console.log(res.tapIndex)
         if(res.tapIndex==0){ //0是拍照
           wx.chooseImage({
             count: 1,
@@ -165,6 +165,7 @@ Page({
             success: function(res) {
               //res.tempFilePaths[0] 这个是图片
                 wx.setStorageSync('key', res.tempFilePaths)
+                // console.log(res.tempFilePaths)
                 wx.navigateTo({
                   url: '/pages/stylization/stylization',
                 })

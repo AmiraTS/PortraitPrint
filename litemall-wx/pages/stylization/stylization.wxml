@@ -8,7 +8,7 @@
   </view>
   <view class="p-container">
     <view class="p-border">
-      <image class="p" mode="widthFix" style="width: 100%;" src="{{upload_pic}}"></image>
+      <image class="p" mode="widthFix" style="width: 100%;" src="{{upload_pic}}"></image> 
     </view>
   </view>
   <view class="e-title-container">

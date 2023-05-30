@@ -166,7 +166,7 @@
     </view>
  
  <!-- 上传更多原图button -->
-    <view bindtap='uploadPictures'>
+    <view bindtap='uploadPictures'> 
       <image class="add_icon" src="../../static/images/uploadPictures.png"></image>
     </view>
  
